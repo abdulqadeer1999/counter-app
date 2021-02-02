@@ -1,17 +1,43 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+
+
+function Count() {
+  const [value, setValue] = React.useState(0);
+
+  function add() {
+    setValue((previousValue) => previousValue + 1)
+
+  }
+  function sub() {
+  
+    setValue(value - 1)
+  }
+
+
+
+  return (
+    <div className = "count">
+
+
+      <button className= "btn" onClick={add}>Increase</button>
+
+      <h1 > {value}   </h1>
+
+      <button className="btn1" onClick={sub}>Decrease</button>
+
+    </div>
+  );
+}
+
+ReactDOM.render(<Count />,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+
