@@ -13,22 +13,28 @@ code {
 }
 
 
-.btn {
+/* .btn {
   text-align: center;
   background-color: black;
   color: blue;
   
-}
+} */
 
 
 
-.btn1 {
+/* .btn1 {
   text-align: center;
   background-color: black;
   color: red;
   
-}
+} */
 
-.count {
-  margin-left: 400px;
-}
+ .count {
+  margin-left: 350px; 
+
+ }
+
+  .btn {
+    margin-top: 30px;
+    /* margin-left: 400px; */
+  }
