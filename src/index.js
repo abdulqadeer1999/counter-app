@@ -25,11 +25,11 @@ function Count() {
 
 
       {/* <button className= "btn" onClick={add}>Increase</button> */}
-      <button type="button" class="btn btn-success" onClick = {add}>Success</button>
+      <button type="button" class="btn btn-success" onClick = {add}>Increase</button>
       <h1 > {value}   </h1>
 
       {/* <button className="btn1" onClick={sub}>Decrease</button> */}
-      <button type="button" class="btn btn-danger" onClick = {sub}>Danger</button>
+      <button type="button" class="btn btn-danger" onClick = {sub}>Decrease</button>
 
     </div>
   );
